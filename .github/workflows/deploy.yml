@@ -22,7 +22,7 @@ jobs:
       - name: Build and Test
         run: 
           cd Backend-spring
-          mvn -f ./ruta/donde/esta/el/pom.xml clean package -DskipTests=false
+          mvn clean package -DskipTests=false
 
       - name: Deploy to Server
         uses: appleboy/ssh-action@v1.0.3
